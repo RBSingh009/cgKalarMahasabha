@@ -1,0 +1,58 @@
+// src/data/activities.js
+
+export const activities = [
+  {
+    id: 1,
+    icon: 'fa-book-open',
+    titleHi: 'शिक्षा सहयोग',
+    titleEn: 'Education Support',
+    descHi: 'मेधावी छात्रों को छात्रवृत्ति, पुस्तकें एवं करियर मार्गदर्शन प्रदान करना।',
+    descEn: 'Providing scholarships, books, and career guidance to meritorious students.',
+    href: '/work',
+  },
+  {
+    id: 2,
+    icon: 'fa-heart-pulse',
+    titleHi: 'चिकित्सा सहायता',
+    titleEn: 'Medical Aid',
+    descHi: 'निःशुल्क स्वास्थ्य शिविर, चिकित्सा परामर्श एवं दवा वितरण।',
+    descEn: 'Free health camps, medical consultations, and medicine distribution.',
+    href: '/work',
+  },
+  {
+    id: 3,
+    icon: 'fa-droplet',
+    titleHi: 'रक्तदान अभियान',
+    titleEn: 'Blood Donation',
+    descHi: 'प्रदेश भर में नियमित रक्तदान शिविरों का संचालन - जीवन रक्षा हेतु।',
+    descEn: 'Regular blood donation camps across the state to save lives.',
+    href: '/work',
+  },
+  {
+    id: 4,
+    icon: 'fa-hand-holding-heart',
+    titleHi: 'आपदा राहत',
+    titleEn: 'Disaster Relief',
+    descHi: 'प्राकृतिक आपदाओं एवं संकट के समय प्रभावित परिवारों को तत्काल सहायता।',
+    descEn: 'Immediate assistance to affected families during natural disasters.',
+    href: '/work',
+  },
+  {
+    id: 5,
+    icon: 'fa-graduation-cap',
+    titleHi: 'छात्रवृत्ति योजना',
+    titleEn: 'Scholarship Program',
+    descHi: 'हर वर्ष 500+ मेधावी छात्रों को आर्थिक सहायता।',
+    descEn: 'Financial aid to 500+ meritorious students every year.',
+    href: '/work',
+  },
+  {
+    id: 6,
+    icon: 'fa-masks-theater',
+    titleHi: 'सांस्कृतिक उत्थान',
+    titleEn: 'Cultural Upliftment',
+    descHi: 'समाज की परंपराओं एवं कलाओं का संरक्षण एवं प्रोत्साहन।',
+    descEn: 'Preserving and promoting community traditions and arts.',
+    href: '/work',
+  },
+];

@@ -1,0 +1,92 @@
+// src/data/faqs.js
+
+export const faqCategories = [
+  { key: 'all',        hi: 'सभी',         en: 'All' },
+  { key: 'membership', hi: 'सदस्यता',      en: 'Membership' },
+  { key: 'donation',   hi: 'दान',          en: 'Donation' },
+  { key: 'events',     hi: 'कार्यक्रम',    en: 'Events' },
+  { key: 'general',    hi: 'सामान्य',      en: 'General' },
+];
+
+export const faqs = [
+  {
+    id: 1,
+    category: 'membership',
+    qHi: 'सदस्य कैसे बनें?',
+    qEn: 'How do I become a member?',
+    aHi: 'हमारी वेबसाइट पर /join पेज पर जाएं। वहां 5-चरणीय फॉर्म भरें - व्यक्तिगत जानकारी, पता, सदस्यता श्रेणी, दस्तावेज़ एवं समीक्षा। आवेदन जमा करने के बाद आपकी सदस्यता संख्या जनरेट होगी।',
+    aEn: 'Visit the /join page on our website. Fill out the 5-step form - personal info, address, membership tier, documents, and review. After submission, your member ID will be generated.',
+  },
+  {
+    id: 2,
+    category: 'membership',
+    qHi: 'सदस्यता श्रेणियाँ कौन-सी हैं?',
+    qEn: 'What are the membership tiers?',
+    aHi: 'तीन श्रेणियाँ हैं: (1) सक्रिय सदस्य - ₹1,000/माह, (2) साधारण सदस्य - ₹5,000–10,000/वर्ष, (3) संरक्षक सदस्य - ₹50,000 एकमुश्त। प्रत्येक श्रेणी में अलग-अलग लाभ हैं।',
+    aEn: 'There are three tiers: (1) Active Member - ₹1,000/month, (2) General Member - ₹5,000–10,000/year, (3) Patron Member - ₹50,000 one-time. Each tier has distinct benefits.',
+  },
+  {
+    id: 3,
+    category: 'membership',
+    qHi: 'सदस्यता आईडी कार्ड कैसे मिलेगा?',
+    qEn: 'How will I receive my membership ID card?',
+    aHi: 'आवेदन स्वीकृत होने के 7 कार्य दिवसों में आपका आईडी कार्ड जारी कर दिया जाएगा। आप इसे /id-card पेज से डाउनलोड कर सकते हैं।',
+    aEn: 'Your ID card will be issued within 7 working days after approval. You can download it from the /id-card page.',
+  },
+  {
+    id: 4,
+    category: 'donation',
+    qHi: 'दान कैसे करें?',
+    qEn: 'How can I donate?',
+    aHi: 'हमारी वेबसाइट पर /donation पेज पर जाएं। वहां राशि चुनें, भुगतान विधि चुनें (UPI / कार्ड / नेट बैंकिंग / बैंक ट्रांसफर) और जानकारी भरें।',
+    aEn: 'Visit the /donation page. Choose an amount, select a payment method (UPI / Card / Net Banking / Bank Transfer), and fill in your details.',
+  },
+  {
+    id: 5,
+    category: 'donation',
+    qHi: 'क्या मुझे 80G कर छूट मिलेगी?',
+    qEn: 'Will I receive 80G tax exemption?',
+    aHi: 'हां, महासंघ 80G पंजीकृत है। दान करते समय "80G रसीद चाहिए" विकल्प चुनें। रसीद आपके ईमेल पर भेज दी जाएगी।',
+    aEn: 'Yes, the Mahasangh is 80G registered. Select the "I need 80G receipt" option while donating. The receipt will be emailed to you.',
+  },
+  {
+    id: 6,
+    category: 'donation',
+    qHi: 'क्या मेरा दान सुरक्षित है?',
+    qEn: 'Is my donation secure?',
+    aHi: 'हां, सभी भुगतान SSL एन्क्रिप्टेड हैं। हम UPI, कार्ड, नेट बैंकिंग जैसे भरोसेमंद तरीकों का उपयोग करते हैं। हर दान पारदर्शी तरीके से उपयोग किया जाता है।',
+    aEn: 'Yes, all payments are SSL encrypted. We use trusted methods like UPI, cards, and net banking. Every donation is used transparently.',
+  },
+  {
+    id: 7,
+    category: 'events',
+    qHi: 'आगामी कार्यक्रम कहां देख सकते हैं?',
+    qEn: 'Where can I see upcoming events?',
+    aHi: '/events पेज पर जाएं - वहां सभी आगामी एवं पिछले कार्यक्रमों की सूची है। आप श्रेणी के अनुसार फ़िल्टर भी कर सकते हैं।',
+    aEn: 'Visit the /events page - it lists all upcoming and past events. You can filter by category.',
+  },
+  {
+    id: 8,
+    category: 'events',
+    qHi: 'कार्यक्रम में भाग लेने के लिए क्या करें?',
+    qEn: 'How do I participate in an event?',
+    aHi: 'प्रत्येक कार्यक्रम के विवरण पेज पर "पंजीकरण करें" बटन है। या महासंघ कार्यालय से संपर्क करें।',
+    aEn: 'Each event detail page has a "Register" button. Or contact the Mahasangh office.',
+  },
+  {
+    id: 9,
+    category: 'general',
+    qHi: 'महासंघ का कार्यालय कहां है?',
+    qEn: 'Where is the Mahasangh office located?',
+    aHi: 'कलार भवन, स्टेशन रोड, रायपुर, छत्तीसगढ़ - 492001। समय: सोमवार-शुक्रवार 10 AM - 6 PM, शनिवार 10 AM - 2 PM।',
+    aEn: 'Kalar Bhavan, Station Road, Raipur, Chhattisgarh - 492001. Hours: Mon-Fri 10 AM - 6 PM, Sat 10 AM - 2 PM.',
+  },
+  {
+    id: 10,
+    category: 'general',
+    qHi: 'स्वयंसेवक कैसे बनें?',
+    qEn: 'How can I become a volunteer?',
+    aHi: '/contact पेज पर जाएं और फॉर्म में "स्वयंसेवक" विषय चुनें। हम आपसे संपर्क करेंगे।',
+    aEn: 'Visit the /contact page and select "Volunteer" as the subject. We will contact you.',
+  },
+];
