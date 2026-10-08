@@ -27,8 +27,8 @@ export const contactInfo = [
     icon: 'fa-phone-volume',
     titleHi: 'फोन',
     titleEn: 'Phone',
-    linesHi: ['+91 98260 50235', '+91 91234 56789'],
-    linesEn: ['+91 98260 50235', '+91 91234 56789'],
+    linesHi: ['+91 98260 50235'],
+    linesEn: ['+91 98260 50235'],
     action: { hi: 'कॉल करें', en: 'Call Now', href: 'tel:+919826050235' },
   },
   {
@@ -36,8 +36,8 @@ export const contactInfo = [
     icon: 'fa-envelope',
     titleHi: 'ईमेल',
     titleEn: 'Email',
-    linesHi: ['cgkalarmahasangh@gmail.com', 'support@cgkalarmahasangh.org'],
-    linesEn: ['cgkalarmahasangh@gmail.com', 'support@cgkalarmahasangh.org'],
+    linesHi: ['cgkalarmahasangh@gmail.com'],
+    linesEn: ['cgkalarmahasangh@gmail.com'],
     action: {
       hi: 'ईमेल भेजें',
       en: 'Send Email',
@@ -64,9 +64,9 @@ export const contactInfo = [
 
 export const contactSocials = [
   { id: 'facebook',  icon: 'fa-facebook-f',  href: 'https://facebook.com',  label: 'Facebook' },
-  { id: 'twitter',   icon: 'fa-x-twitter',   href: 'https://twitter.com',   label: 'Twitter' },
+  // { id: 'twitter',   icon: 'fa-x-twitter',   href: 'https://twitter.com',   label: 'Twitter' },
   { id: 'instagram', icon: 'fa-instagram',   href: 'https://instagram.com', label: 'Instagram' },
-  { id: 'youtube',   icon: 'fa-youtube',     href: 'https://youtube.com',   label: 'YouTube' },
+  // { id: 'youtube',   icon: 'fa-youtube',     href: 'https://youtube.com',   label: 'YouTube' },
   { id: 'whatsapp',  icon: 'fa-whatsapp',    href: 'https://wa.me/919826050235', label: 'WhatsApp' },
 ];
 

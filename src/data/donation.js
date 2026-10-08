@@ -80,5 +80,5 @@ export const donationStats = [
   { value: '25,000+', labelHi: 'सदस्य',      labelEn: 'Members' },
   { value: '₹2.5 Cr+', labelHi: 'कुल दान',    labelEn: 'Total Donated' },
   { value: '10,000+', labelHi: 'परिवारों को सहयोग', labelEn: 'Families Helped' },
-  { value: '28',      labelHi: 'जिले',       labelEn: 'Districts' },
+  { value: '33',      labelHi: 'जिले',       labelEn: 'Districts' },
 ];

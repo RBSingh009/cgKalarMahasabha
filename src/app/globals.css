@@ -3721,6 +3721,7 @@ body {
 /* ============================================================
    ABOUT PAGE
    ============================================================ */
+
 .ckm-about-page {
   background: #FBF8F1;
 }
@@ -3981,6 +3982,9 @@ body {
   font-weight: 800;
 }
 
+/* ============================================================
+   ABOUT PAGE — STATS STRIP
+   ============================================================ */
 .ckm-about-stats {
   background: linear-gradient(135deg, #5A0A0A 0%, #7B0F0F 55%, #400707 100%);
   padding: 50px 0;
@@ -4040,6 +4044,177 @@ body {
   margin-top: 8px;
 }
 
+/* ============================================================
+   ABOUT PAGE — STORY BLOCKS
+   (pride, society, politics, service, resolve)
+   ============================================================ */
+.ckm-about-story {
+  background: linear-gradient(180deg, #ffffff 0%, #fbf8f1 100%);
+  position: relative;
+}
+
+.ckm-about-story-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 50px;
+}
+
+.ckm-story-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid rgba(201, 162, 75, 0.28);
+  border-radius: 20px;
+  padding: 34px 30px 30px;
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+.ckm-story-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--ckm-gold-dark), var(--ckm-gold-light), var(--ckm-gold-dark));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.ckm-story-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--ckm-gold);
+  box-shadow: 0 22px 46px rgba(64, 7, 7, 0.14);
+}
+
+.ckm-story-card:hover::before {
+  transform: scaleX(1);
+}
+
+.ckm-story-card-wide {
+  grid-column: 1 / -1;
+}
+
+.ckm-story-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--ckm-gold), var(--ckm-gold-light));
+  color: var(--ckm-maroon-deep);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 24px rgba(201, 162, 75, 0.4);
+  transition: transform 0.35s ease;
+}
+
+.ckm-story-card:hover .ckm-story-icon {
+  transform: scale(1.08) rotate(-4deg);
+}
+
+.ckm-story-card h2 {
+  font-family: 'Nunito Sans', 'Noto Sans Devanagari', sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  color: var(--ckm-maroon-deep);
+  margin: 0 0 16px;
+  line-height: 1.3;
+  letter-spacing: -0.3px;
+}
+
+.ckm-story-card p {
+  color: #4a4238;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0 0 14px;
+}
+
+.ckm-story-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================================
+   ABOUT PAGE — CLOSING QUOTE
+   ============================================================ */
+.ckm-about-quote {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 44px 48px 38px;
+  background: linear-gradient(135deg, #400707 0%, #7c0f12 55%, #400707 100%);
+  border-radius: 24px;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.ckm-about-quote::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 0%,
+      rgba(201, 162, 75, 0.28) 0%,
+      transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ckm-about-quote>* {
+  position: relative;
+  z-index: 1;
+}
+
+.ckm-about-quote-mark {
+  display: block;
+  font-size: 42px;
+  color: var(--ckm-gold-light);
+  margin: 0 auto 18px;
+  opacity: 0.8;
+}
+
+.ckm-about-quote p {
+  font-family: 'Nunito Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.92);
+  font-style: italic;
+  margin: 0 0 26px;
+  letter-spacing: 0.2px;
+}
+
+.ckm-about-quote footer {
+  padding-top: 22px;
+  border-top: 1px solid rgba(201, 162, 75, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+
+.ckm-about-quote footer strong {
+  font-family: 'Nunito Sans', 'Noto Sans Devanagari', sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  color: var(--ckm-gold-light);
+  letter-spacing: 0.5px;
+}
+
+.ckm-about-quote footer span {
+  font-family: 'Nunito Sans', 'Noto Sans Devanagari', sans-serif;
+  font-size: 13.5px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  max-width: 620px;
+}
+
+/* ============================================================
+   ABOUT PAGE — VALUES
+   ============================================================ */
 .ckm-about-values {
   background: linear-gradient(180deg, #FFFFFF 0%, #FBF8F1 100%);
   padding: 90px 0;
@@ -4120,6 +4295,9 @@ body {
   margin: 0;
 }
 
+/* ============================================================
+   ABOUT PAGE — FOCUS AREAS
+   ============================================================ */
 .ckm-focus-sec {
   background: #FBF8F1;
   padding: 90px 0;
@@ -4192,6 +4370,9 @@ body {
   flex-shrink: 0;
 }
 
+/* ============================================================
+   ABOUT PAGE — TIMELINE
+   ============================================================ */
 .ckm-timeline-sec {
   background: linear-gradient(180deg, #FBF8F1 0%, #FFFFFF 100%);
   padding: 90px 0;
@@ -4306,6 +4487,9 @@ body {
   margin: 0;
 }
 
+/* ============================================================
+   ABOUT PAGE — TEAM PREVIEW
+   ============================================================ */
 .ckm-about-team {
   background: #FFFFFF;
   padding: 90px 0;
@@ -4347,6 +4531,46 @@ body {
 
 .ckm-about-team-card:hover .ckm-at-photo img {
   transform: scale(1.08);
+}
+
+/* Team preview user icon (photo fallback) */
+.ckm-at-user-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #7c0f12 0%, #4a0708 100%);
+  color: #e9d08c;
+  font-size: 64px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ckm-at-user-icon::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 40%,
+      rgba(201, 162, 75, 0.28) 0%,
+      transparent 65%);
+  pointer-events: none;
+}
+
+.ckm-at-user-icon::after {
+  content: '';
+  position: absolute;
+  inset: 18px;
+  border: 2px dashed rgba(233, 208, 140, 0.22);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.ckm-at-user-icon i {
+  position: relative;
+  z-index: 1;
+  opacity: 0.9;
+  filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.35));
 }
 
 .ckm-at-overlay {
@@ -4418,6 +4642,268 @@ body {
 .ckm-about-team-cta {
   text-align: center;
   margin-top: 40px;
+}
+
+/* ============================================================
+   ABOUT PAGE — RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+
+  .ckm-about-intro4,
+  .ckm-about-values,
+  .ckm-focus-sec,
+  .ckm-timeline-sec,
+  .ckm-about-team {
+    padding: 70px 0;
+  }
+
+  .ckm-about-intro4-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .ckm-about-collage {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 20px 30px 50px 0;
+  }
+
+  .ckm-about-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .ckm-about-stat:nth-child(2)::after {
+    display: none;
+  }
+
+  .ckm-about-stat:nth-child(1),
+  .ckm-about-stat:nth-child(2) {
+    border-bottom: 1px solid rgba(201, 162, 75, 0.2);
+    padding-bottom: 26px;
+  }
+
+  .ckm-values-grid,
+  .ckm-focus-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .ckm-about-team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .ckm-timeline::before {
+    left: 24px;
+  }
+
+  .ckm-tl-item,
+  .ckm-tl-item.left,
+  .ckm-tl-item.right {
+    grid-template-columns: 48px 1fr;
+    gap: 16px;
+  }
+
+  .ckm-tl-item .ckm-tl-year,
+  .ckm-tl-item.left .ckm-tl-year,
+  .ckm-tl-item.right .ckm-tl-year {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: left;
+    font-size: 22px;
+  }
+
+  .ckm-tl-item .ckm-tl-dot,
+  .ckm-tl-item.left .ckm-tl-dot,
+  .ckm-tl-item.right .ckm-tl-dot {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    align-self: flex-start;
+    margin-top: 6px;
+  }
+
+  .ckm-tl-item .ckm-tl-card,
+  .ckm-tl-item.left .ckm-tl-card,
+  .ckm-tl-item.right .ckm-tl-card {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: left;
+  }
+
+  .ckm-about-story-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .ckm-about-intro4,
+  .ckm-about-values,
+  .ckm-focus-sec,
+  .ckm-timeline-sec,
+  .ckm-about-team,
+  .ckm-about-story {
+    padding: 50px 0;
+  }
+
+  .ckm-about-collage {
+    padding: 16px 20px 44px 0;
+  }
+
+  .ckm-collage-main {
+    border-width: 4px;
+    outline-offset: -10px;
+  }
+
+  .ckm-collage-small {
+    width: 42%;
+    border-width: 4px;
+  }
+
+  .ckm-collage-badge {
+    min-width: 100px;
+    padding: 14px 16px;
+    border-width: 2px;
+  }
+
+  .ckm-cb-number {
+    font-size: 30px;
+  }
+
+  .ckm-cb-suffix {
+    font-size: 18px;
+  }
+
+  .ckm-cb-label {
+    font-size: 10px;
+  }
+
+  .ckm-about-intro4-title {
+    font-size: 24px;
+  }
+
+  .ckm-about-para {
+    font-size: 14.5px;
+  }
+
+  .ckm-about-chips {
+    gap: 10px;
+  }
+
+  .ckm-chip {
+    padding: 10px 16px 10px 10px;
+  }
+
+  .ckm-chip-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .ckm-chip-text {
+    font-size: 12.5px;
+  }
+
+  .ckm-about-checklist {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 20px 0 24px;
+  }
+
+  .ckm-about-cta-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 18px;
+  }
+
+  .ckm-about-cta-row .ckm-about-cta {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .ckm-about-stats {
+    padding: 40px 0;
+  }
+
+  .ckm-about-stat::after {
+    display: none !important;
+  }
+
+  .ckm-about-stat:not(:last-child) {
+    border-bottom: 1px solid rgba(201, 162, 75, 0.2);
+    padding-bottom: 22px;
+  }
+
+  .ckm-values-grid,
+  .ckm-focus-grid,
+  .ckm-about-team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ckm-value-card,
+  .ckm-focus-card {
+    padding: 24px 20px;
+  }
+
+  .ckm-story-card {
+    padding: 24px 20px 22px;
+    border-radius: 16px;
+  }
+
+  .ckm-story-card h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .ckm-story-card p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .ckm-story-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 20px;
+    border-radius: 14px;
+    margin-bottom: 16px;
+  }
+
+  .ckm-story-card-wide {
+    grid-column: 1;
+  }
+
+  .ckm-about-quote {
+    padding: 30px 22px 26px;
+    border-radius: 18px;
+  }
+
+  .ckm-about-quote-mark {
+    font-size: 32px;
+    margin-bottom: 14px;
+  }
+
+  .ckm-about-quote p {
+    font-size: 14.5px;
+    margin-bottom: 20px;
+  }
+
+  .ckm-about-quote footer strong {
+    font-size: 16px;
+  }
+
+  .ckm-about-quote footer span {
+    font-size: 12.5px;
+  }
+
+  .ckm-at-user-icon {
+    font-size: 52px;
+  }
+
+  .ckm-at-user-icon::after {
+    inset: 14px;
+  }
 }
 
 /* ============================================================
@@ -23004,4 +23490,155 @@ body {
     display: block;
     background-position: center center;
   }
+}
+
+/* ============================================================
+   ADMIN — FILTER TABS
+   ============================================================ */
+.ckm-admin-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.ckm-admin-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  background: #fff;
+  border: 1.5px solid var(--admin-border);
+  border-radius: 50px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--admin-maroon);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ckm-admin-filter-btn:hover {
+  border-color: var(--admin-gold);
+  background: rgba(201, 162, 75, 0.08);
+}
+
+.ckm-admin-filter-btn.is-active {
+  background: linear-gradient(135deg, var(--admin-maroon), var(--admin-maroon-dark));
+  color: var(--admin-gold-light);
+  border-color: var(--admin-maroon);
+  box-shadow: 0 6px 16px rgba(123, 15, 15, 0.2);
+}
+
+.ckm-admin-filter-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 20px;
+  padding: 0 6px;
+  background: rgba(201, 162, 75, 0.2);
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--admin-maroon);
+}
+
+.ckm-admin-filter-btn.is-active .ckm-admin-filter-count {
+  background: rgba(233, 208, 140, 0.3);
+  color: var(--admin-gold-light);
+}
+
+/* ============================================================
+   ADMIN — ADDITIONAL TIER / STATUS PILLS
+   ============================================================ */
+.ckm-admin-tier.is-active {
+  background: rgba(46, 204, 113, 0.15);
+  color: #1e874b;
+}
+
+.ckm-admin-tier.is-pending {
+  background: rgba(243, 156, 18, 0.15);
+  color: #b9770e;
+}
+
+.ckm-admin-tier.is-inactive {
+  background: rgba(192, 57, 43, 0.12);
+  color: #c0392b;
+}
+
+.ckm-admin-tier.is-suspended {
+  background: rgba(127, 140, 141, 0.18);
+  color: #566573;
+}
+
+.ckm-admin-tier.is-notice {
+  background: rgba(201, 162, 75, 0.15);
+  color: var(--admin-maroon);
+}
+
+.ckm-admin-tier.is-scheme {
+  background: rgba(123, 15, 15, 0.12);
+  color: var(--admin-maroon-deep);
+}
+
+.ckm-admin-tier.is-event {
+  background: rgba(44, 122, 107, 0.12);
+  color: #1f5c51;
+}
+
+.ckm-admin-tier.is-education {
+  background: rgba(52, 152, 219, 0.14);
+  color: #21618c;
+}
+
+.ckm-admin-tier.is-health {
+  background: rgba(231, 76, 60, 0.12);
+  color: #922b21;
+}
+
+.ckm-admin-tier.is-cultural {
+  background: rgba(155, 89, 182, 0.14);
+  color: #6c3483;
+}
+
+.ckm-admin-tier.is-upcoming {
+  background: rgba(52, 152, 219, 0.14);
+  color: #21618c;
+}
+
+.ckm-admin-tier.is-ongoing {
+  background: rgba(243, 156, 18, 0.15);
+  color: #b9770e;
+}
+
+.ckm-admin-tier.is-completed {
+  background: rgba(46, 204, 113, 0.15);
+  color: #1e874b;
+}
+
+.ckm-admin-tier.is-cancelled {
+  background: rgba(192, 57, 43, 0.12);
+  color: #c0392b;
+}
+
+.ckm-admin-tier.is-published {
+  background: rgba(46, 204, 113, 0.15);
+  color: #1e874b;
+}
+
+.ckm-admin-tier.is-draft {
+  background: rgba(127, 140, 141, 0.18);
+  color: #566573;
+}
+
+/* Success action button */
+.ckm-admin-icon-action.is-success {
+  color: #1e874b;
+}
+
+.ckm-admin-icon-action.is-success:hover {
+  background: #1e874b;
+  border-color: #1e874b;
+  color: #fff;
 }

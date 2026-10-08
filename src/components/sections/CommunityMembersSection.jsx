@@ -8,6 +8,11 @@ export default function CommunityMembersSection() {
   const { lang } = useLang();
   const isHi = lang === 'hi';
 
+  /* Filter: only office bearers (members with a role) */
+  const officeBearers = members.filter(
+    (m) => m.role && m.role.trim() !== ''
+  );
+
   return (
     <section className="ckm-members-section sec-padding">
       <div className="ckm-container">
@@ -29,7 +34,7 @@ export default function CommunityMembersSection() {
 
         {/* Grid of members */}
         <div className="ckm-members-grid">
-          {members.map((member) => {
+          {officeBearers.map((member) => {
             const name = isHi
               ? member.nameHi || member.name || ''
               : member.nameEn || member.name || '';
@@ -44,7 +49,6 @@ export default function CommunityMembersSection() {
             return (
               <article className="ckm-member-card" key={member.id}>
                 <div className="ckm-member-photo">
-                  {/* ⚡ Dummy user icon instead of photo */}
                   <div className="ckm-member-user-icon">
                     <i className="fa-solid fa-user" />
                   </div>
@@ -80,10 +84,10 @@ export default function CommunityMembersSection() {
                   <h3 className="ckm-member-name">{name}</h3>
 
                   <ul className="ckm-member-details">
-                    {member.city && (
+                    {member.district && (
                       <li>
                         <i className="fa-solid fa-location-dot" />
-                        <span>{member.city}</span>
+                        <span>{member.district}</span>
                       </li>
                     )}
 
