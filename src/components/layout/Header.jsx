@@ -80,17 +80,35 @@ export default function Header() {
                   <span>cgkalarmahasangh@gmail.com</span>
                 </a>
                 <div className="ckm-topbar-socials">
-                  <a href="#" aria-label="Facebook">
+                  {/* <a href="https://www.facebook.com/share/19j2CHX1SP/" aria-label="Facebook">
+                    <i className="fa-brands fa-facebook-f" />
+                  </a> */}
+                  {/* <a href="#" aria-label="X (Twitter)">
+                    <i className="fa-brands fa-x-twitter" />
+                  </a> */}
+                  {/* <a href="https://www.instagram.com/cgkalarmahasabha/" aria-label="Instagram">
+                    <i className="fa-brands fa-instagram" />
+                  </a> */}
+                  {/* <a href="#" aria-label="YouTube">
+                    <i className="fa-brands fa-youtube" />
+                  </a> */}
+
+                  <a
+                    href="https://www.facebook.com/share/19j2CHX1SP/"
+                    aria-label="Facebook"
+                  >
                     <i className="fa-brands fa-facebook-f" />
                   </a>
-                  <a href="#" aria-label="X (Twitter)">
-                    <i className="fa-brands fa-x-twitter" />
-                  </a>
-                  <a href="#" aria-label="Instagram">
+
+                  <a
+                    href="https://www.instagram.com/cgkalarmahasabha/"
+                    aria-label="Instagram"
+                  >
                     <i className="fa-brands fa-instagram" />
                   </a>
-                  <a href="#" aria-label="YouTube">
-                    <i className="fa-brands fa-youtube" />
+
+                  <a href="https://wa.me/919826050235" aria-label="WhatsApp">
+                    <i className="fa-brands fa-whatsapp" />
                   </a>
                 </div>
               </div>
